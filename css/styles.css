@@ -33,6 +33,7 @@ main {
     padding: 20px;
     max-width: 800px;
     margin: auto;
+    text-align: justify; /* Added to justify the text alignment */
 }
 
 footer {
