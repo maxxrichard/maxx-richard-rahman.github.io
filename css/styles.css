@@ -17,6 +17,7 @@ header {
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -38,8 +39,15 @@ main {
 
 h2 {
     color: #333;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
 ul {
@@ -48,7 +56,7 @@ ul {
 }
 
 ul li {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 ul li strong {
@@ -58,10 +66,14 @@ ul li strong {
     color: #000;
 }
 
-ul li em {
-    display: block;
-    margin-top: 5px;
-    color: #555;
+ul ul {
+    margin-left: 20px; /* Indent nested lists */
+    list-style-type: disc; /* Change style for nested lists */
+    padding-left: 20px;
+}
+
+ul ul li {
+    margin-bottom: 8px; /* Less margin for nested items */
 }
 
 footer {
