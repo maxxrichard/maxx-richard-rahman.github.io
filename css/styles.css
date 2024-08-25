@@ -33,7 +33,35 @@ main {
     padding: 20px;
     max-width: 800px;
     margin: auto;
-    text-align: justify; /* Added to justify the text alignment */
+    text-align: justify;
+}
+
+h2 {
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 20px;
+}
+
+ul li strong {
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+ul li em {
+    display: block;
+    margin-top: 5px;
+    color: #555;
 }
 
 footer {
