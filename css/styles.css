@@ -51,31 +51,21 @@ p {
 }
 
 ul {
-    list-style-type: none; /* Removes default bullet points */
-    padding-left: 0;
-}
-
-ul li {
-    margin-bottom: 15px;
-    position: relative;
-    padding-left: 20px; /* Space for custom bullet */
-}
-
-ul li::before {
-    content: "•"; /* Adds a custom bullet point */
-    position: absolute;
-    left: 0; /* Positions bullet to the left */
-    color: #333; /* Bullet color */
+    list-style-type: disc; /* Standard bullet points for unordered lists */
+    padding-left: 20px; /* Indentation for bullet points */
 }
 
 ul ul {
-    margin-left: 20px; /* Indent nested lists */
-    padding-left: 20px;
+    list-style-type: circle; /* Different bullet style for nested lists */
+    margin-left: 20px; /* Indentation for nested lists */
 }
 
-ul ul li {
-    margin-bottom: 8px; /* Less margin for nested items */
-    padding-left: 20px; /* Space for custom bullet */
+ul li {
+    margin-bottom: 10px; /* Space between list items for readability */
+}
+
+b {
+    font-weight: bold; /* Ensuring bold font-weight for bold elements */
 }
 
 footer {
