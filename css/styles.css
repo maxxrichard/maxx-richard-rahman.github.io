@@ -61,7 +61,12 @@ ul ul {
 }
 
 ul li {
-    margin-bottom: 10px; /* Space between list items for readability */
+    margin-bottom: 20px; /* Space between list items for readability */
+}
+
+.video {
+    margin-top: 10px; /* Space above each video */
+    margin-bottom: 30px; /* Space below each video for separation */
 }
 
 b {
