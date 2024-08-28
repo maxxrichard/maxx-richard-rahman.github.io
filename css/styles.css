@@ -1,109 +1,156 @@
-/* Reset some default styles */
-body, html, ul, li, p, h1, h2, h3 {
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Use a modern sans-serif font */
     margin: 0;
     padding: 0;
-    list-style: none;
-    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9; /* Light background color */
+    color: #333;
+    line-height: 1.6;
 }
 
-body {
-    background-color: #121212;
+/* Header styles */
+header {
+    background-color: #282c34; /* Dark background color for header */
     color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky; /* Makes header sticky on scroll */
+    top: 0;
+    z-index: 1000;
 }
 
-.container {
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    width: 100%;
-    min-height: 100vh;
+    justify-content: center; /* Center the navigation items */
 }
 
-.sidebar {
-    width: 300px;
-    background-color: #1e1e1e;
-    padding: 20px;
+nav ul li {
+    margin: 0 15px;
 }
 
-.profile {
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    background-color: #444951; /* Change background on hover */
+}
+
+/* Main content styles */
+main {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Section styles */
+h2 {
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    font-size: 24px;
     text-align: center;
 }
 
-.profile-img {
-    width: 100px;
-    border-radius: 50%;
+p {
     margin-bottom: 20px;
 }
 
-.name {
-    font-size: 1.5em;
-}
-
-.title {
-    color: #9d9d9d;
+/* List styles */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
     margin-bottom: 20px;
 }
 
-.contact-info p {
-    font-size: 0.9em;
+ul ul {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+ul li {
     margin-bottom: 10px;
 }
 
-.social-media {
-    margin-top: 20px;
+/* Video embedding styles */
+.video {
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 560px; /* Adjust the max width for video if needed */
 }
 
-.social-media a {
-    margin: 0 5px;
-    display: inline-block;
+.video iframe {
+    width: 100%;
+    height: 315px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.main-content {
-    flex: 1;
-    padding: 20px;
-    background-color: #212121;
-}
-
-header nav ul {
-    display: flex;
-    justify-content: space-around;
-    background-color: #333;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-header nav ul li a {
+/* Footer styles */
+footer {
+    background-color: #282c34;
     color: #fff;
-    text-decoration: none;
-}
-
-section {
-    margin-bottom: 40px;
-}
-
-h2 {
-    margin-bottom: 20px;
-    font-size: 1.8em;
-    border-bottom: 2px solid #ffcc00;
-    display: inline-block;
-    padding-bottom: 5px;
-}
-
-.services {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.service {
-    flex: 1 1 calc(50% - 40px);
-    background-color: #333;
-    padding: 20px;
-    border-radius: 10px;
     text-align: center;
+    padding: 15px 0;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.testimonial {
-    background-color: #333;
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+/* Button styles */
+button, .button {
+    background-color: #282c34;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .button:hover {
+    background-color: #444951;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically on smaller screens */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .video iframe {
+        height: 200px; /* Smaller height for videos on smaller screens */
+    }
 }
