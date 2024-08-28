@@ -1,84 +1,156 @@
-/* css/styles.css */
+/* General styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif; /* Use a modern sans-serif font */
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #f4f4f9; /* Light background color */
     color: #333;
+    line-height: 1.6;
 }
 
+/* Header styles */
 header {
-    background-color: #333;
+    background-color: #282c34; /* Dark background color for header */
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky; /* Makes header sticky on scroll */
+    top: 0;
+    z-index: 1000;
 }
 
+/* Navigation styles */
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center; /* Center the navigation items */
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
+nav ul li a:hover {
+    background-color: #444951; /* Change background on hover */
+}
+
+/* Main content styles */
 main {
-    padding: 20px;
-    max-width: 800px;
+    padding: 40px 20px;
+    max-width: 1000px;
     margin: auto;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* Section styles */
 h2 {
     color: #333;
     margin-top: 30px;
     margin-bottom: 15px;
     border-bottom: 2px solid #ddd;
     padding-bottom: 5px;
+    font-size: 24px;
+    text-align: center;
 }
 
 p {
-    line-height: 1.6;
     margin-bottom: 20px;
 }
 
+/* List styles */
 ul {
-    list-style-type: disc; /* Standard bullet points for unordered lists */
-    padding-left: 20px; /* Indentation for bullet points */
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
 }
 
 ul ul {
-    list-style-type: circle; /* Different bullet style for nested lists */
-    margin-left: 20px; /* Indentation for nested lists */
+    list-style-type: circle;
+    margin-left: 20px;
 }
 
 ul li {
-    margin-bottom: 20px; /* Space between list items for readability */
+    margin-bottom: 10px;
 }
 
+/* Video embedding styles */
 .video {
-    margin-top: 10px; /* Space above each video */
-    margin-bottom: 30px; /* Space below each video for separation */
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 560px; /* Adjust the max width for video if needed */
 }
 
-b {
-    font-weight: bold; /* Ensuring bold font-weight for bold elements */
+.video iframe {
+    width: 100%;
+    height: 315px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Footer styles */
 footer {
-    background-color: #333;
+    background-color: #282c34;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
+    padding: 15px 0;
+    position: sticky;
     bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styles */
+button, .button {
+    background-color: #282c34;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .button:hover {
+    background-color: #444951;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically on smaller screens */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .video iframe {
+        height: 200px; /* Smaller height for videos on smaller screens */
+    }
 }
